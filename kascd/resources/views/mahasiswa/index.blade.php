@@ -7,6 +7,7 @@
         <th>Kelas</th>
         <th>Jenis Kelamin</th>
         <th>Alamat</th>
+        <th>Aksi</th>
     </tr>
     @foreach ($mahasiswa as $m)
     <tr>
@@ -16,6 +17,7 @@
         <td>{{ $m->kelas }}</td>
         <td>{{ $m->jeniskelamin }}</td>
         <td>{{ $m->alamat }}</td>
+        <td><a href="/mahasiswa/{{ $m->id }}/edit">Edit</a></td>
     </tr>
     @endforeach
 
